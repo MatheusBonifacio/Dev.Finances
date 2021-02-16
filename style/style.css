@@ -12,7 +12,17 @@ body{
     background: #f0f2f5;
     font-family: 'Poppins', sans-serif;
 }
-
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+}
 .container{
     width:min(90vw,800px);
     margin: auto;
@@ -60,6 +70,9 @@ header{
 .card h3{
     font-weight: normal;
     font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .card p{
     font-size: 2rem;
@@ -89,10 +102,10 @@ table th{
     padding: 1rem 2rem;
     text-align: left;
 }
-table tr{
+table tbody tr{
     opacity: 0.7;
 }
-table tr:hover{
+table tbody tr:hover{
     opacity: 1;
 }
 
@@ -101,10 +114,20 @@ table td{
     padding: 1rem 2rem;
 
 }
-
-
+td.description{
+    color: var(--dark-blue);
+}
+td.income{
+    color: #12a454;
+}
+td.expense{
+    color:#e92929;
+}
 
 /*Footer ==================== */
 footer{
     text-align: center;
+    padding: 4rem 0 2rem;
+    color: var(--dark-blue);
+    opacity: 0.6;
 }
