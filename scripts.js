@@ -69,17 +69,23 @@ const Transaction = {
 // Substituir os dados do HTML com os dados do JS
 
 const DOM = {
+    transactionsContainer: document.querySelector('#data-table tbody'),
+
     addTransaction(transaction, index){
         const tr = document.createElement('tr')
-        tr.innerHTML = DOM.innerHTMLTransaction()
+        tr.innerHTML = DOM.innerHTMLTransaction(transaction, index)
+ 
+        DOM.transactionsContainer.appendChild(tr)
+
     },
-    innerHTMLTransaction(){
+
+    innerHTMLTransaction(transaction){
         
         const html = `
         <tr>
-            <td class="description">Luz</td>
-            <td class="expense">- R$ 110,50</td>
-            <td class="date">23/01/2021</td>
+            <td class="description">${transaction.description}</td>
+            <td class="expense">${transaction.amount}</td>
+            <td class="date">${transaction.date}</td>
             <td>
                 <img src="./assets/minus.svg" alt="Remover Transação">
             </td>
@@ -90,4 +96,8 @@ const DOM = {
 }
 }
 
-DOM.addTransaction()
+
+
+transactions.forEach(function (transaction) {
+    DOM.addTransaction(transaction)
+})
