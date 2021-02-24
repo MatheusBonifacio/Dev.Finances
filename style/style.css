@@ -100,17 +100,6 @@ header{
     text-align: center;
 }
 
-header h1{
-    color: #fff;
-    font-weight: 600;
-    font-family: 'DotGothic16', sans-serif;
-    
-}
-
-header i{
-    color: #e92929;
-    padding: 0 1rem 0 0;
-}
 
 #logo{
     color: #fff;
