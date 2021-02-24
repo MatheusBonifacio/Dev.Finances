@@ -7,12 +7,17 @@
     <link rel="stylesheet" href="style/style.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,100;1,500&display=swap" rel="stylesheet">
-    
-    <title>Your.F\inance$</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+
+    <title>Dev.Finance$</title>
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="./assets/logo.svg" alt="Logo Dev Finance"></a>
+
+      <h1><i class="fa fa-wallet"></i>Your Finances</h1>
+
+      <!-- <a href="index.html"><img src="./assets/logo.svg" alt="Logo Dev Finance"></a> -->
       </header>
 
     <main class="container">
@@ -24,7 +29,7 @@
                   <span>Entradas</span>
                   <img src="./assets/income.svg" alt="Entradas">
                 </h3>
-                 <p>R$ 5.000,00</p>
+                 <p id="incomeDisplay">R$ 0,00</p>
             </div>
 
             <div class="card">
@@ -32,18 +37,18 @@
                 <span>Saídas</span>
                 <img src="./assets/expense.svg" alt="Saídas">
               </h3>
-            <p>R$ 2.000,00</p>
+            <p id="expenseDisplay">R$ 0,00</p>
             </div>
             <div class="card total">
               <h3>
                 <span>Total</span>
                 <img src="./assets/total.svg" alt="Total">
               </h3>
-            <p>R$ 3.000,00</p>
+            <p id="totalDisplay">R$ 0,00</p>
             </div>         
       
             
-      
+            
             
         </section>
 
@@ -72,7 +77,7 @@
       <div class="modal">
         <div id="form">
           <h2>Nova Transação</h2>
-          <form action="">
+          <form action="" onsubmit="Form.submit(event)">
             <div class="input-group">
               <label class="sr-only" for="description">Descrição</label>
               <input type="text"id="description" name="description" placeholder="Descrição">
@@ -100,7 +105,7 @@
     </div>
 
     <footer>
-      <p>Your.Finance$</p>
+      <p>Dev.Finance$</p>
     </footer>
     <!-- Modelo de Script -->
     <script src="./scripts.js">

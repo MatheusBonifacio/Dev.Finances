@@ -17,7 +17,7 @@ html{
 }
 
 body{
-    background: #f0f2f5;
+    background: #1e2223;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -42,7 +42,7 @@ body{
 h2{
     margin-top: 3.2rem;
     margin-bottom: 0.8rem;
-    color: var(--dark-blue);
+    color: #363f5f;
     font-weight: normal;
 }
 
@@ -98,6 +98,18 @@ header{
     background: #2d4a22;
     padding: 2rem 0 10rem;
     text-align: center;
+}
+
+header h1{
+    color: #fff;
+    font-weight: 600;
+    font-family: 'DotGothic16', sans-serif;
+    
+}
+
+header i{
+    color: #e92929;
+    padding: 0 1rem 0 0;
 }
 
 #logo{
@@ -247,7 +259,7 @@ input{
     margin-top: 0.8rem;
 }
 
-.input-group small{
+.input-group .help{
     opacity: 0.4;
 }
 
@@ -266,7 +278,7 @@ input{
 footer{
     text-align: center;
     padding: 4rem 0 2rem;
-    color: var(--dark-blue);
+    color:#fff;
     opacity: 0.6;
 }
 
