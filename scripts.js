@@ -254,7 +254,7 @@ const Form = {
         // apagar os dados do formulario
         Form.clearFields()
         // modal feche
-        Modal.close()
+        modal.close()
         // Atualizar a aplicação
         // App.reload() - Já tem um App.reload no add(transaction)
 
